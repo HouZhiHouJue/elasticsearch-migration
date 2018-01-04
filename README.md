@@ -6,11 +6,13 @@ But this project has some problems when I build with go 1.9.2
 
 Some is because of the go bcl  has been changed
 
-The other is due to the package [Gorequest](https://github.com/parnurzeal/gorequest)
+The other problem main due to the package [Gorequest](https://github.com/parnurzeal/gorequest)
 
-I move the gorequest to this project and fix the connection problem.
+this package has very serious connection problems.
 
-After doing all of this ,it works fine for me now.
+I move the gorequest to this project and fixed it.
+
+It works fine now.
 
 So, have fun :-}
 
