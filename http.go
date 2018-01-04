@@ -24,7 +24,7 @@ import (
 	"net/url"
 
 	log "github.com/cihub/seelog"
-	"github.com/parnurzeal/gorequest"
+	"github.com/medcl/esm/gorequest"
 )
 
 func Get(url string, auth *Auth, proxy string) (*http.Response, string, []error) {
