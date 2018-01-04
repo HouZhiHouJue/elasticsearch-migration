@@ -1,20 +1,19 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
+	"io"
+	"os"
 	"runtime"
 	"strings"
 	"sync"
 	"time"
 
-	"bufio"
-	"io"
-	"os"
-
 	log "github.com/cihub/seelog"
 	goflags "github.com/jessevdk/go-flags"
-	pb "gopkg.in/cheggaaa/pb.v1"
+	"gopkg.in/cheggaaa/pb.v1"
 )
 
 func main() {
@@ -119,6 +118,7 @@ func main() {
 
 					// loop scrolling until done
 					for scroll.Next(&migrator, fetchBar) == false {
+						time.Sleep(time.Second * 5)
 					}
 					fetchBar.Finish()
 					// finished, close doc chan and wait for goroutines to be done

@@ -80,7 +80,7 @@ type Config struct {
 	TargetEs          string `short:"d" long:"dest"    description:"destination elasticsearch instance, ie: http://localhost:9201"`
 	SourceEsAuthStr   string `short:"m" long:"source_auth"  description:"basic auth of source elasticsearch instance, ie: user:pass"`
 	TargetEsAuthStr   string `short:"n" long:"dest_auth"  description:"basic auth of target elasticsearch instance, ie: user:pass"`
-	DocBufferCount    int    `short:"c" long:"count"   description:"number of documents at a time: ie \"size\" in the scroll request" default:"10000"`
+	DocBufferCount    int    `short:"c" long:"count"   description:"number of documents at a time: ie \"size\" in the scroll request" default:"1000"`
 	Workers           int    `short:"w" long:"workers" description:"concurrency number for bulk workers" default:"1"`
 	BulkSizeInMB      int    `short:"b" long:"bulk_size" description:"bulk size in MB" default:"5"`
 	ScrollTime        string `short:"t" long:"time"    description:"scroll time" default:"1m"`

@@ -2,17 +2,7 @@
 
 This project is fork from [Here](https://github.com/medcl/esm)
 
-But this project has some problems when I build with go 1.9.2
-
-Some is because of the go bcl  has been changed
-
-The other problem main due to the package [Gorequest](https://github.com/parnurzeal/gorequest)
-
-this package has very serious connection problems.
-
-I move the gorequest to this project and fixed it.
-
-It works fine now.
+after fix all bugs ,it works fine now.
 
 So, have fun :-}
 
@@ -51,7 +41,7 @@ Support cross version and http basic auth.
 copy index `index_name` from `192.168.1.x` to `192.168.1.y:9200`
 
 ```
-./bin/esm  -s http://192.168.1.x:9200   -d http://192.168.1.y:9200 -x index_name  -w=5 -b=10 -c 10000
+./bin/esm  -s http://192.168.1.x:9200   -d http://192.168.1.y:9200 -x index_name  -w=5 -b=10 -c=10000
 ```
 
 copy index `src_index` from `192.168.1.x` to `192.168.1.y:9200` and save with `dest_index`
